@@ -354,7 +354,7 @@ html {
 }
 
 .js-progress {  
-    animation: javascript 2s forwards; /* Aplica la animación solo para JavaScript */
+    animation: javascript 4s forwards; /* Aplica la animación solo para JavaScript */
 }
 
 @keyframes javascript {
@@ -376,7 +376,7 @@ html {
     /* Espacio entre el icono y el texto */
 }
 .react-progress{
-    animation: react 2s forwards; /
+    animation: react 4s forwards; /
 }
 
 @keyframes react {
@@ -398,7 +398,7 @@ html {
     /* Espacio entre el icono y el texto */
 }
 .html-progress{
-    animation: html 2s forwards; /
+    animation: html 4s forwards; /
 }
 
 @keyframes html {
@@ -419,7 +419,7 @@ html {
     margin-right: 10px;
 }
 .css-progress{
-    animation: css 2s forwards; 
+    animation: css 4s forwards; 
 }
 @keyframes css {
     0% {
@@ -440,7 +440,7 @@ html {
     /* Espacio entre el icono y el texto */
 }
 .laravel-progress{
-    animation: laravel 2s forwards; 
+    animation: laravel 4s forwards; 
 }
 
 @keyframes laravel {
@@ -462,7 +462,7 @@ html {
     /* Espacio entre el icono y el texto */
 }
 .python-progress{
-    animation: python 2s forwards; 
+    animation: python 4s forwards; 
 }
 
 @keyframes python {
@@ -477,7 +477,7 @@ html {
 
 .skills .skill .comunicacion {
     width: 0%;
-    animation: 2s comunicacion forwards;
+    animation: 3s comunicacion forwards;
 }
 
 @keyframes comunicacion {
@@ -492,7 +492,7 @@ html {
 
 .skills .skill .trabajo {
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 3s trabajo forwards;
 }
 
 @keyframes trabajo {
@@ -507,7 +507,7 @@ html {
 
 .skills .skill .resolucion {
     width: 0%;
-    animation: 2s resolucion forwards;
+    animation: 3s resolucion forwards;
 }
 
 @keyframes resolucion {
@@ -522,7 +522,7 @@ html {
 
 .skills .skill .gestion {
     width: 0%;
-    animation: 2s gestion forwards;
+    animation: 3s gestion forwards;
 }
 
 @keyframes gestion {
@@ -537,7 +537,7 @@ html {
 
 .skills .skill .adaptabilidad {
     width: 0%;
-    animation: 2s adaptabilidad forwards;
+    animation: 3s adaptabilidad forwards;
 }
 
 @keyframes adaptabilidad {
@@ -552,7 +552,7 @@ html {
 
 .skills .skill .cordialidad {
     width: 0%;
-    animation: 2s cordialidad forwards;
+    animation: 3s cordialidad forwards;
 }
 
 @keyframes cordialidad {
@@ -567,7 +567,7 @@ html {
 
 .skills .skill .servicial {
     width: 0%;
-    animation: 2s servicial forwards;
+    animation: 3s servicial forwards;
 }
 
 @keyframes servicial {
