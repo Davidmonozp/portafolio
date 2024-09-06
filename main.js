@@ -40,3 +40,27 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 }
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío por defecto del formulario
+
+    // Crea un objeto FormData a partir del formulario
+    const formData = new FormData(this);
+
+    // Usa fetch para enviar los datos al servidor
+    fetch('https://formsubmit.co/david_es-zu@hotmail.com', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            document.getElementById('responseMessage').innerText = 'Mensaje enviado correctamente.';
+            document.getElementById('contactForm').reset(); // Opcional: Limpiar el formulario después del envío
+        } else {
+            throw new Error('Error al enviar el mensaje.');
+        }
+    })
+    .catch(error => {
+        document.getElementById('responseMessage').innerText = error.message;
+    });
+});
