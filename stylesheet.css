@@ -70,57 +70,107 @@ html {
     background: linear-gradient(to top, rgba(1, 54, 85, 0.8), rgba(30, 35, 38, 1)),
         url(imagenes/fondo.jpg);
     background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 90vh; 
+    padding-top: 70px; 
+    padding-bottom: 80px; 
+}
+.contenido-banner{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 5px 0 ;
+}
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 12rem;
+    flex-direction: row;
+}
+.container .hero-pic{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 12px solid #18e6d5;
+    border-radius: 50%;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+.hero-pic img{
+height: 100%;
+width: 100%;
+transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text h5{
+    color: #f3f5f5;
+    font-size: 20px;
+}
+.hero-text h5 span{
+    color: #18e6d5;
+    font-size: 25px;
+}
+.hero-text h1{
+    color: #18e6d5;
+    font-size: 4rem;
+}
+.hero-text p{
+    color: #ffffff;
+    font-size: 20px;
+}
+.hero-text .social i {
+    color: #ffffff;               /* Color del ícono */
+    font-size: 25px;              /* Tamaño del ícono */
+    display: inline-block;        /* Asegura que los íconos se alineen correctamente */
+    text-decoration: none;        /* Elimina el subrayado si es un enlace */
+    border: 1px solid #fff;       /* Borde blanco alrededor del ícono */
+    border-radius: 50%;           /* Borde redondeado para formar un círculo */
+    width: 42px;                  /* Ancho del círculo */
+    height: 42px;                 /* Altura del círculo */
+    line-height: 42px;            /* Altura de línea para centrar verticalmente el ícono */
+    margin: 40px 5px;             /* Espacio alrededor del círculo */
+    transition: 0.3s;             /* Transición suave para cambios */
+    text-align: center;           /* Alineación del texto para centrar horizontalmente el ícono */
+    display: inline-flex;         /* Usa flexbox para centrar contenido */
+    align-items: center;          /* Centra verticalmente el ícono dentro del círculo */
+    justify-content: center;      /* Centra horizontalmente el ícono dentro del círculo */
+}
+
+.social i:hover{
+    background-color: #0fc2b3;
+    /* transform: rotate(360deg); */
+}
+
+@media(max-width:1000px)
+{
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .hero-text{
+        padding: 40px 0px;
+    }
+}
+/* .inicio {
+    background: linear-gradient(to top, rgba(1, 54, 85, 0.8), rgba(30, 35, 38, 1)),
+        url(imagenes/fondo.jpg);
+    background-size: cover;
     height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
-}
+} */
 
-.inicio .contenido-banner {
-    padding: 20px;
-    background-color: #011729;
-    max-width: 350px;
-    margin: auto;
-    text-align: center;
-    border-radius: 40px;
-    border: 2px solid #77f1d8;
-}
 
-.inicio .contenido-banner img {
-    margin-top: 40px;
-    border: 10px solid #1CB698;
-    display: block;
-    width: 80%;
-    margin: auto;
-    border-radius: 100%;
-}
-
-.inicio .contenido-banner h1 {
-    margin-top: 40px;
-    font-size: 42px;
-    font-family: 'Righteous';
-}
-
-.inicio .contenido-banner h2 {
-    font-size: 15px;
-    font-weight: normal;
-}
-
-.inicio .contenido-banner .redes a {
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
-}
-
-.inicio .contenido-banner .redes a:hover {
+.redes a:hover {
     background-color: #1CB698;
 }
 
@@ -228,6 +278,7 @@ html {
     color: #fff;
     position: relative;
     z-index: 10;
+    border-radius: 8px;
 }
 
 .sobremi button .overlay {
@@ -277,6 +328,7 @@ html {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .skills .skill>span {
@@ -353,8 +405,9 @@ html {
     margin-right: 10px;
 }
 
-.js-progress {  
-    animation: javascript 4s forwards; /* Aplica la animación solo para JavaScript */
+.js-progress {
+    animation: javascript 4s forwards;
+    /* Aplica la animación solo para JavaScript */
 }
 
 @keyframes javascript {
@@ -375,8 +428,9 @@ html {
     margin-right: 10px;
     /* Espacio entre el icono y el texto */
 }
-.react-progress{
-    animation: react 4s forwards; /
+
+.react-progress {
+    animation: react 4s forwards;/
 }
 
 @keyframes react {
@@ -397,8 +451,9 @@ html {
     margin-right: 10px;
     /* Espacio entre el icono y el texto */
 }
-.html-progress{
-    animation: html 4s forwards; /
+
+.html-progress {
+    animation: html 4s forwards;/
 }
 
 @keyframes html {
@@ -418,9 +473,11 @@ html {
     /* Color del icono (azul Python) */
     margin-right: 10px;
 }
-.css-progress{
-    animation: css 4s forwards; 
+
+.css-progress {
+    animation: css 4s forwards;
 }
+
 @keyframes css {
     0% {
         width: 0%;
@@ -439,8 +496,9 @@ html {
     margin-right: 10px;
     /* Espacio entre el icono y el texto */
 }
-.laravel-progress{
-    animation: laravel 4s forwards; 
+
+.laravel-progress {
+    animation: laravel 4s forwards;
 }
 
 @keyframes laravel {
@@ -461,8 +519,9 @@ html {
     margin-right: 10px;
     /* Espacio entre el icono y el texto */
 }
-.python-progress{
-    animation: python 4s forwards; 
+
+.python-progress {
+    animation: python 4s forwards;
 }
 
 @keyframes python {
@@ -856,6 +915,7 @@ html {
     color: #fff;
     position: relative;
     z-index: 10;
+    border-radius: 8px;
 }
 
 .contacto button .overlay {
@@ -949,6 +1009,9 @@ footer .arriba {
 }
 
 /* SECCION RESPONSIVE */
+
+
+
 @media screen and (max-width:980px) {
     nav {
         display: none;
@@ -1018,13 +1081,16 @@ footer .arriba {
     .portafolio .galeria .proyecto {
         max-width: 100%;
     }
-    .portafolio .galeria .proyecto img{
+
+    .portafolio .galeria .proyecto img {
         width: 100%;
     }
-    .contacto .fila{
+
+    .contacto .fila {
         display: block;
     }
-    .contacto .fila .col{
+
+    .contacto .fila .col {
         width: 100%;
     }
 }

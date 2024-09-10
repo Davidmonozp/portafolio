@@ -41,6 +41,7 @@ window.onscroll = function(){
     efectoHabilidades();
 }
 
+//Envio correo del Formulario
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita el envío por defecto del formulario
 
@@ -64,3 +65,18 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         document.getElementById('responseMessage').innerText = error.message;
     });
 });
+
+//Descarga de CV
+document.getElementById('downloadCV').addEventListener('click', function() {
+    // Reemplaza la ruta con la URL de tu archivo PDF
+    const pdfUrl = 'https://docs.google.com/document/d/1JdVj7ME6Ip81CE2iAxCfvnsTThgBO2L5/edit';
+    
+    // Crear un elemento <a> para manejar la descarga
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'hoja_de_vida'; // Nombre del archivo a descargar
+    document.body.appendChild(link); // Agregar el enlace al DOM
+    link.click(); // Hacer clic en el enlace
+    document.body.removeChild(link); // Eliminar el enlace del DOM
+});
+

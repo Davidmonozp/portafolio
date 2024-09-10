@@ -8,6 +8,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="stylesheet.css">
+  
     <title>Portafolio</title>
 </head>
 
@@ -38,20 +39,41 @@
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="imagenes/perfilf.jpeg" alt="">
-            </div>
-            <h1>DAVID ZUÑIGA</h1>
-            <h2>Desarrollo de software</h2>
-
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="https://wa.me/573214662896" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="imagenes/perfilf.jpeg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hola soy <span class="input">Desarrollador de software    </span></h5>
+                    <h1>David Zuñiga</h1>
+                    <p> Soy un desarrollador de software en prácticas con experiencia en el desarrollo front-end y back-end. Trabajo con tecnologías como Laravel para el desarrollo de aplicaciones web y React para la creación de interfaces interactivas. </p>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Davidmonozp"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/573214662896" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imagenes/perfilf.jpeg" alt="">
+            </div>
+            <div class="contenido">
+                <h1>Hola, mi nombre es </h1>
+                <h1>DAVID ZUÑIGA</h1>
+                <h3>Desarrollador de software <br>radicado en Bogota, Colombia</h3>
+
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Davidmonozp"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/573214662896" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
@@ -125,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <button>
+            <button id="downloadCV">
                 Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
                 <span class="overlay"></span>
             </button>
@@ -332,8 +354,8 @@
                             <li>Redux.</li>
                             <li>Autenticación en Firebase.</li>
                             <li>CRUD en Firestore.</li>
-                            <li>Subida de archivos.</li>                            
-                            <li>Material UI.</li>                            
+                            <li>Subida de archivos.</li>
+                            <li>Material UI.</li>
                         </span>
                         <div class="conectori">
                             <div class="circuloi"></div>
@@ -391,7 +413,8 @@
                             <p>Desarrollo de vistas en Laravel utilizando Blade para una presentación clara y eficiente
                                 de la información al usuario.</p><br>
                             <p>
-                                Implementación de controladores para gestionar la lógica de negocio y coordinar la comunicación entre modelos y vistas.
+                                Implementación de controladores para gestionar la lógica de negocio y coordinar la
+                                comunicación entre modelos y vistas.
                             </p>
 
                         </span>
@@ -498,14 +521,27 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/Davidmonozp"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/573214662896" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        var element = document.querySelector(".input");
+        if (element) {  // Verifica que el elemento con la clase 'input' existe
+            var typed = new Typed(".input", {
+                strings: ["Desarrollador de software"],
+                typeSpeed: 70,      // Velocidad de escritura
+                backSpeed: 55,      // Velocidad de borrado
+                loop: true          // Repite el texto
+            });
+        } else {
+            console.error("Elemento con la clase '.input' no encontrado.");
+        }
+    });</script>
     <script src="main.js"></script>
+    
 </body>
 
 </html>
