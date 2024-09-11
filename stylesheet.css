@@ -72,93 +72,121 @@ html {
     background-size: cover;
     height: 100%;
     width: 100%;
-    min-height: 90vh; 
-    padding-top: 70px; 
-    padding-bottom: 80px; 
+    min-height: 90vh;
+    padding-top: 70px;
+    padding-bottom: 80px;
 }
-.contenido-banner{
+
+.contenido-banner {
     width: 1280px;
     max-width: 95%;
     margin: 0 auto;
-    padding: 5px 0 ;
+    padding: 5px 0;
 }
-.container{
-    display:flex;
+
+.container {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 12rem;
     flex-direction: row;
 }
-.container .hero-pic{
+
+.container .hero-pic {
     width: 300px;
     height: 300px;
     overflow: hidden;
     border: 12px solid #18e6d5;
     border-radius: 50%;
-    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+    align-items: center;
 }
-.hero-pic img{
-height: 100%;
-width: 100%;
-transition: 0.5s;
+
+.hero-pic img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
 }
-.hero-pic img:hover{
+
+.hero-pic img:hover {
     transform: scale(1.2);
 }
-.hero-text{
+
+.hero-text {
     max-width: 700px;
     display: flex;
     flex-direction: column;
 }
-.hero-text h5{
+
+.hero-text h5 {
     color: #f3f5f5;
     font-size: 20px;
 }
-.hero-text h5 span{
+
+.hero-text h5 span {
     color: #18e6d5;
     font-size: 25px;
 }
-.hero-text h1{
+
+.hero-text h1 {
     color: #18e6d5;
     font-size: 4rem;
 }
-.hero-text p{
+
+.hero-text p {
     color: #ffffff;
     font-size: 20px;
 }
+
 .hero-text .social i {
-    color: #ffffff;               /* Color del ícono */
-    font-size: 25px;              /* Tamaño del ícono */
-    display: inline-block;        /* Asegura que los íconos se alineen correctamente */
-    text-decoration: none;        /* Elimina el subrayado si es un enlace */
-    border: 1px solid #fff;       /* Borde blanco alrededor del ícono */
-    border-radius: 50%;           /* Borde redondeado para formar un círculo */
-    width: 42px;                  /* Ancho del círculo */
-    height: 42px;                 /* Altura del círculo */
-    line-height: 42px;            /* Altura de línea para centrar verticalmente el ícono */
-    margin: 40px 5px;             /* Espacio alrededor del círculo */
-    transition: 0.3s;             /* Transición suave para cambios */
-    text-align: center;           /* Alineación del texto para centrar horizontalmente el ícono */
-    display: inline-flex;         /* Usa flexbox para centrar contenido */
-    align-items: center;          /* Centra verticalmente el ícono dentro del círculo */
-    justify-content: center;      /* Centra horizontalmente el ícono dentro del círculo */
+    color: #ffffff;
+    /* Color del ícono */
+    font-size: 25px;
+    /* Tamaño del ícono */
+    display: inline-block;
+    /* Asegura que los íconos se alineen correctamente */
+    text-decoration: none;
+    /* Elimina el subrayado si es un enlace */
+    border: 1px solid #fff;
+    /* Borde blanco alrededor del ícono */
+    border-radius: 50%;
+    /* Borde redondeado para formar un círculo */
+    width: 42px;
+    /* Ancho del círculo */
+    height: 42px;
+    /* Altura del círculo */
+    line-height: 42px;
+    /* Altura de línea para centrar verticalmente el ícono */
+    margin: 40px 5px;
+    /* Espacio alrededor del círculo */
+    transition: 0.3s;
+    /* Transición suave para cambios */
+    text-align: center;
+    /* Alineación del texto para centrar horizontalmente el ícono */
+    display: inline-flex;
+    /* Usa flexbox para centrar contenido */
+    align-items: center;
+    /* Centra verticalmente el ícono dentro del círculo */
+    justify-content: center;
+    /* Centra horizontalmente el ícono dentro del círculo */
 }
 
-.social i:hover{
+.social i:hover {
     background-color: #0fc2b3;
     /* transform: rotate(360deg); */
 }
 
-@media(max-width:1000px)
-{
-    .container{
+@media(max-width:1024px) {
+    .container {
         flex-direction: column;
         padding-top: 2rem;
     }
-    .hero-text{
+
+    .hero-text {
         padding: 40px 0px;
     }
 }
+
 /* .inicio {
     background: linear-gradient(to top, rgba(1, 54, 85, 0.8), rgba(30, 35, 38, 1)),
         url(imagenes/fondo.jpg);
@@ -673,6 +701,7 @@ transition: 0.5s;
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    text-align: center;
 }
 
 /* .curriculum .fila .izquierda {
@@ -1007,6 +1036,34 @@ footer .arriba {
 .redes a:hover {
     background-color: #1CB698;
 }
+
+.pie {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+}
+
+/* Tamaño del ícono */
+.pie i {
+    font-size: 8px;
+    /* Tamaño del ícono */
+    margin-right: 5px;
+}
+
+/* Tamaño del texto */
+.pie p {
+    font-size: 14px;
+    /* Tamaño del texto */
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente el texto y el ícono */
+}
+
+
+
+
 
 /* SECCION RESPONSIVE */
 
