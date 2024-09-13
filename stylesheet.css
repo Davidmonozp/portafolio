@@ -843,7 +843,9 @@ html {
         inset 0 0 1rem #1CB698,
         inset 0 0 1rem #024a4a;
 }
-
+a.link {
+    color: #ffffff; 
+  }
 .portafolio .galeria .proyecto .overlay {
     position: absolute;
     top: 0;
