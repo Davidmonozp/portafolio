@@ -445,7 +445,7 @@ l
     }
 
     100% {
-        width: 70%;
+        width:100%;
     }
 }
 
@@ -468,7 +468,30 @@ l
     }
 
     100% {
-        width: 70%;
+        width: 100%;
+    }
+}
+
+.fa-angular {
+    font-size: 20px;
+    /* Tamaño del icono */
+    color: #61dafb;
+    /* Color del icono (azul React) */
+    margin-right: 10px;
+    /* Espacio entre el icono y el texto */
+}
+
+.angular-progress {
+    animation: react 4s forwards;/
+}
+
+@keyframes angular {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
     }
 }
 
@@ -491,7 +514,7 @@ l
     }
 
     100% {
-        width: 60%;
+        width: 100%;
     }
 }
 
@@ -513,7 +536,7 @@ l
     }
 
     100% {
-        width: 50%;
+        width: 100%;
     }
 }
 
@@ -536,7 +559,7 @@ l
     }
 
     100% {
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -559,7 +582,7 @@ l
     }
 
     100% {
-        width: 45%;
+        width: 100%;
     }
 }
 
@@ -574,7 +597,7 @@ l
     }
 
     100% {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -589,7 +612,7 @@ l
     }
 
     100% {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -604,7 +627,7 @@ l
     }
 
     100% {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -619,7 +642,7 @@ l
     }
 
     100% {
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -634,7 +657,7 @@ l
     }
 
     100% {
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -649,7 +672,7 @@ l
     }
 
     100% {
-        width: 78%;
+        width: 100%;
     }
 }
 
@@ -664,7 +687,7 @@ l
     }
 
     100% {
-        width: 80%;
+        width: 100%;
     }
 }
 
